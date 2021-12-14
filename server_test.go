@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/snple/mqtt/circ"
-	"github.com/snple/mqtt/packets"
-	"github.com/snple/mqtt/persistence"
-	"github.com/snple/mqtt/system"
-	"github.com/snple/mqtt/topics"
+	"github.com/jyk1987/mqtt/circ"
+	"github.com/jyk1987/mqtt/packets"
+	"github.com/jyk1987/mqtt/persistence"
+	"github.com/jyk1987/mqtt/system"
+	"github.com/jyk1987/mqtt/topics"
 	"github.com/stretchr/testify/require"
 )
 

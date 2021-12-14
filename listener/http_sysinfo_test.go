@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/snple/mqtt/system"
+	"github.com/jyk1987/mqtt/system"
 	"github.com/stretchr/testify/require"
 )
 

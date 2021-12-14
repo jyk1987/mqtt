@@ -10,8 +10,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/snple/mqtt"
-	"github.com/snple/mqtt/system"
+	"github.com/jyk1987/mqtt"
+	"github.com/jyk1987/mqtt/system"
 )
 
 // HTTPStats is a listener for presenting the server $SYS stats on a JSON http endpoint.

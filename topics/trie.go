@@ -4,7 +4,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/snple/mqtt/packets"
+	"github.com/jyk1987/mqtt/packets"
 )
 
 // Subscriptions is a map of subscriptions keyed on client.

@@ -4,7 +4,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/snple/mqtt/system"
+	"github.com/jyk1987/mqtt/system"
 )
 
 // EstablishFunc is a callback function for establishing new clients.

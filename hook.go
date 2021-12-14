@@ -1,7 +1,7 @@
 package mqtt
 
 import (
-	"github.com/snple/mqtt/packets"
+	"github.com/jyk1987/mqtt/packets"
 )
 
 // Hook is the server hook interface.

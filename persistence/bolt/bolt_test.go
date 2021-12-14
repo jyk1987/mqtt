@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/snple/mqtt/persistence"
-	"github.com/snple/mqtt/system"
+	"github.com/jyk1987/mqtt/persistence"
+	"github.com/jyk1987/mqtt/system"
 	"github.com/stretchr/testify/require"
 	"go.etcd.io/bbolt"
 )

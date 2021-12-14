@@ -3,7 +3,7 @@ package topics
 import (
 	"testing"
 
-	"github.com/snple/mqtt/packets"
+	"github.com/jyk1987/mqtt/packets"
 	"github.com/stretchr/testify/require"
 )
 

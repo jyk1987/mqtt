@@ -28,7 +28,7 @@ Note: The API of this library is still unstable and has not been sufficiently te
 
 ``` go
 import (
-    "github.com/snple/mqtt"
+    "github.com/jyk1987/mqtt"
     "log"
 )
 
@@ -88,7 +88,7 @@ SSL/TLS may be configured on both the TCP and Websocket listeners.
 Snple MQTT provides a `persistence.Store` interface for developing and attaching persistent stores to the broker. The default persistence mechanism packaged with the broker is backed by [Bolt](https://github.com/etcd-io/bbolt) and can be enabled by assigning a `*bolt.Store` to the server.
 
 ```go
-    // import "github.com/snple/mqtt/persistence/bolt"
+    // import "github.com/jyk1987/mqtt/persistence/bolt"
     err = server.AddStore(bolt.New("mqtt.db", nil))
     if err != nil {
         log.Fatal(err)

@@ -26,7 +26,7 @@
 
 ``` go
 import (
-    "github.com/snple/mqtt"
+    "github.com/jyk1987/mqtt"
     "log"
 )
 
@@ -86,7 +86,7 @@ TCP 和 Websocket 监听器够可以配置 SSL/TLS.
 Snple MQTT 提供了 `persistence.Store` 接口用于开发和附加数据持久化存储. 默认提供的持久化机制是使用 [Bolt](https://github.com/etcd-io/bbolt), 可以给服务器添加一个 `*bolt.Store` 来启用.
 
 ```go
-    // import "github.com/snple/mqtt/persistence/bolt"
+    // import "github.com/jyk1987/mqtt/persistence/bolt"
     err = server.AddStore(bolt.New("mqtt.db", nil))
     if err != nil {
         log.Fatal(err)
