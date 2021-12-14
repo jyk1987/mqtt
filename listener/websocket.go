@@ -27,13 +27,13 @@ var (
 
 // Websocket is a listener for establishing websocket connections.
 type Websocket struct {
+	end        int64  // ensure the close methods are only called once.
 	id         string // the internal id of the listener.
 	address    string // the network address to bind to.
 	listen     net.Listener
 	httpServer *http.Server // an http server for serving websocket connections.
 	auth       mqtt.Auth
 	tls        *tls.Config
-	end        int64              // ensure the close methods are only called once.
 	establish  mqtt.EstablishFunc // the server's establish conection handler.
 }
 

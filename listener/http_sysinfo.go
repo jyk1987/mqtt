@@ -16,13 +16,13 @@ import (
 
 // HTTPStats is a listener for presenting the server $SYS stats on a JSON http endpoint.
 type HTTPStats struct {
+	end        int64        // ensure the close methods are only called once.}
 	id         string       // the internal id of the listener.
 	system     *system.Info // pointers to the server data.
 	listen     net.Listener
 	address    string       // the network address to bind to.
 	httpServer *http.Server // the http server.
 	tls        *tls.Config
-	end        int64 // ensure the close methods are only called once.}
 }
 
 // NewHTTPStats initialises and returns a new HTTP listener, listening on an address.

@@ -3,7 +3,6 @@ package system
 // Info contains atomic counters and values for various server statistics
 // commonly found in $SYS topics.
 type Info struct {
-	Version             string `json:"version"`              // the current version of the server.
 	Started             int64  `json:"started"`              // the time the server started in unix seconds.
 	Uptime              int64  `json:"uptime"`               // the number of seconds the server has been online.
 	BytesRecv           int64  `json:"bytes_recv"`           // the total number of bytes received in all packets.
@@ -21,4 +20,5 @@ type Info struct {
 	Retained            int64  `json:"retained"`             // the number of messages currently retained.
 	Inflight            int64  `json:"inflight"`             // the number of messages currently in-flight.
 	Subscriptions       int64  `json:"subscriptions"`        // the total number of filter subscriptions.
+	Version             string `json:"version"`              // the current version of the server.
 }
